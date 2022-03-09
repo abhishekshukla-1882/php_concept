@@ -65,6 +65,7 @@ if(isset($_SESSION['login'])){
                           <?php  }
                             else{ ?>
                             <li><a href="login.php"><i class="fa fa-user"></i> Login</a></li>
+                            <li><a href="registration.php"><i class="fa fa-user"></i> Sign Up</a></li>
 
                            <?php }
                             ?>

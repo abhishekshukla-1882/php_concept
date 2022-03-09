@@ -5,20 +5,20 @@
     {
         public string $username;
         public string $password;
-        public int $authen;
 
-        public function __construct($username, $password,$authen)
+
+        public function __construct($username, $password)
         {
             // $this->user_id = $user_id;
             $this->username = $username;
             $this->password = $password;
-            $this->authen = 0;
+         
             // $this->email = $email;
         }
 
         public function addUser(){
         
-            DB::getInstance()->exec("INSERT INTO user (username,password,authen) VALUES ('$this->username', '$this->password', '$this->authen')");
+            DB::getInstance()->exec("INSERT INTO user (username,password) VALUES ('$this->username', '$this->password')");
             
         }
         public function login($username,$password){
